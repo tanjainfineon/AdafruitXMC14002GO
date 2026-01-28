@@ -1,17 +1,11 @@
 # Adafruit NeoPixel Library [![Build Status](https://github.com/adafruit/Adafruit_NeoPixel/workflows/Arduino%20Library%20CI/badge.svg)](https://github.com/adafruit/Adafruit_NeoPixel/actions)[![Documentation](https://github.com/adafruit/ci-arduino/blob/master/assets/doxygen_badge.svg)](http://adafruit.github.io/Adafruit_NeoPixel/html/index.html)
 
-Arduino library for controlling single-wire-based LED pixels and strip such as the [Adafruit 60 LED/meter Digital LED strip][strip], the [Adafruit FLORA RGB Smart Pixel][flora], the [Adafruit Breadboard-friendly RGB Smart Pixel][pixel], the [Adafruit NeoPixel Stick][stick], and the [Adafruit NeoPixel Shield][shield].
+After downloading, rename folder to 'Adafruit_NeoPixel' and install in Arduino Libraries folder. Restart Arduino IDE, then open File->Sketchbook->Library->Adafruit_NeoPixel->final_xmc/green_pulse.
+Necessary HW: 
+- Adafruit Neopixel, 12 Pixel (we used: https://www.adafruit.com/product/1643)
+- XMC1400 2GO -> 5V supply needed!
 
-After downloading, rename folder to 'Adafruit_NeoPixel' and install in Arduino Libraries folder. Restart Arduino IDE, then open File->Sketchbook->Library->Adafruit_NeoPixel->strandtest sketch.
-
-Compatibility notes: Port A is not supported on any AVR processors at this time
-
-[flora]:  http://adafruit.com/products/1060
-[strip]:  http://adafruit.com/products/1138
-[pixel]:  http://adafruit.com/products/1312
-[stick]:  http://adafruit.com/products/1426
-[shield]: http://adafruit.com/products/1430
-
+Note: official repo is https://github.com/Infineon/XMC-for-Arduino, but this repo does not support the XMC 1400 2GO. Therefore, use this repo! 
 ---
 
 ## Installation
