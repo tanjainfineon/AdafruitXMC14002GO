@@ -4,8 +4,8 @@ After downloading, rename folder to 'Adafruit_NeoPixel' and install in Arduino L
 Necessary HW: 
 - Adafruit Neopixel, 12 Pixel (we used: https://www.adafruit.com/product/1643)
 - XMC1400 2GO -> 5V supply needed!
-
-Note: official repo is https://github.com/Infineon/XMC-for-Arduino, but this repo does not support the XMC 1400 2GO. Therefore, use this repo! 
+--
+Note: official repo for XMC support:  https://github.com/Infineon/XMC-for-Arduino, but this repo does not support the XMC 1400 2GO. Therefore, use this repo! 
 ---
 
 ## Installation
