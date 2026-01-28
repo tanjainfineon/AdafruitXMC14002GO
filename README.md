@@ -1,9 +1,23 @@
 # Adafruit NeoPixel Library [![Build Status](https://github.com/adafruit/Adafruit_NeoPixel/workflows/Arduino%20Library%20CI/badge.svg)](https://github.com/adafruit/Adafruit_NeoPixel/actions)[![Documentation](https://github.com/adafruit/ci-arduino/blob/master/assets/doxygen_badge.svg)](http://adafruit.github.io/Adafruit_NeoPixel/html/index.html)
 
-After downloading, rename folder to 'Adafruit_NeoPixel' and install in Arduino Libraries folder. Restart Arduino IDE, then open File->Sketchbook->Library->Adafruit_NeoPixel->final_xmc/green_pulse.
+After downloading, rename folder to 'Adafruit_NeoPixel' and install in Arduino Libraries folder. Restart Arduino IDE, then open File->Sketchbook->Library->Adafruit_NeoPixel->examples -> strandtest.
+
+System setup 
+
 Necessary HW: 
 - Adafruit Neopixel, 12 Pixel (we used: https://www.adafruit.com/product/1643)
 - XMC1400 2GO -> 5V supply needed!
+
+Connections: 
+- Data Neopixel ->  Pin 8 XMC 
+- VDD Neopixel -> 5V Pin XMC 
+- GND Neopixel -> GND XMC 
+- recommended: 1000µF between 5V and GND XMC 
+
+Code: 
+Adafruit_NeoPixel->final_xmc/green_pulse
+
+
 
 #Note: official repo for XMC support:  https://github.com/Infineon/XMC-for-Arduino, but this repo does not support the XMC 1400 2GO. Therefore, use this repo! 
 ---

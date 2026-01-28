@@ -8,18 +8,14 @@
 Adafruit_NeoPixel ring(LED_COUNT, OUTPUT_PIN, NEO_GRB + NEO_KHZ800);
 
 unsigned long pixelPrevious = 0;        // Previous Pixel Millis
-bool          patternComplete = false;
-
 int           pixelInterval = 50;       // Pixel Interval Teater(ms)
 uint16_t      pixelNumber = LED_COUNT;  // Total Number of Pixels
-//bool          executedCase1 = false;  // Flag to track if case 1 has been execute
 
 
 void setup() {
   ring.begin();        // Initialize the LED ring
   ring.show();         // Turn off all LEDs initially
   pinMode(XMC_LED, OUTPUT);
-  //pinMode should be changed from INPUT_PULLUP to INPUT if connected to Poller 
   pinMode(INPUT_PIN, INPUT);
 }
 
@@ -37,6 +33,7 @@ void loop() {
       }
     }
   else{
+    // Check if INPUT_PIN is LOW
       ring.fill(ring.Color(20, 20, 20), 0, 12);
       ring.show();
       digitalWrite(XMC_LED, HIGH);
